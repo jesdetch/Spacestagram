@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ImageCardComponent } from './image-card/image-card.component';
-
 
 
 
