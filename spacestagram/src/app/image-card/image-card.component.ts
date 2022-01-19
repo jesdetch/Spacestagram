@@ -10,7 +10,6 @@ import { Image } from './model/image';
 export class ImageCardComponent implements OnInit {
   
   images : Image[] = []; 
-  toggle = true;
 
 
   constructor(private imageCardService:ImageCardService) { }
@@ -26,14 +25,5 @@ export class ImageCardComponent implements OnInit {
 
   }
 
-  likeButtonClicked(imageId: string){
-    let image = document.getElementById(imageId);
-
-    if (image){
-      image.setAttribute("style", "backgroundColor:#8a8a8a"); 
-    }
-
-    //this.toggle = !this.toggle;
-  }
 
 }
