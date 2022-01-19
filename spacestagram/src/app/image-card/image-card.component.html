@@ -1,8 +1,8 @@
-<!-- Cards -->
-<div>
+
+<div >
   <div style = "margin-bottom : 60px" > 
-   <div *ngFor = 'let image of images' style="border-width: 0.2px;border-color: black; border-style: solid; ">
-    <mat-card class="card" style= "">
+   <div *ngFor = 'let image of images' style="margin-bottom : 25px" >
+    <mat-card class="card" >
       <img mat-card-image src={{image.img_src}} alt="Photo of a mars">
       <mat-card-content>
         <h3>
@@ -11,7 +11,7 @@
         <p>{{image.earth_date}}</p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>Like</button>
+        <button type="button" class="btn btn-success btn-rounded">Like</button>
       </mat-card-actions>
     </mat-card>
   </div>
